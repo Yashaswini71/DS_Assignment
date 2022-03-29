@@ -39,22 +39,20 @@ void in(int e)
     }
 }
 
-void print_odd_data()
+void print_odd_data()//2
 {
-    node *p = f, *q;
-    int c = 1;
-    while (p != l)
-    {
-        if (p->data % 2 == 1)
-        {
-            printf("\nposition %d: %d", c, p->data);
-        }
-        q = p;       // previous node
-        p = p->next; // the node
-        c++;
-    }
+       node *p=f;
+       int c=1;
+       while(p!=l)
+{
+        if(p->data%2==1)
+{
+         printf("\nposition %d: %d",c,p->data);
 }
-
+         p=p->next;//the node
+         c++;
+ }
+}
 int main()
 {
     in(1);
